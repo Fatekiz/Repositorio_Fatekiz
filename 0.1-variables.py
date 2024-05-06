@@ -1,62 +1,37 @@
-# Declarando Variable con el x = "y"
+
+#1. Declarando Variable con el x = "y"
 name = "Benjamin"
 apellido = "Concha"
-#impresion de la variable (print clasimo)
+edad = 18
+#2. impresion de la variable (print clasimo)
 print("Hola soy", name)
 
-name2 = "Leonardo";
-#Impresión de variable (print f-string)
-print(f"Hola mi nombre es {name2}")
 
-name3 = "Leonel";
-#Impresión de variable (concatenación)
-print("¡Hola buenas! yo soy " + name3 )
+#3. Impresión de variable (print f-string)
+print(f"Hola mi nombre es {name}") 
 
-#Definiendo 2 Números enteros.
+
+# 4. Impresión de variable (concatenación)
+print("1. ¡Hola buenas! yo soy " + name + " " + apellido  + " y tengo" + " " +str(edad) +" " + "años" )
+
+#5. Declarando variable numérica
 edad = 18
 cumpleaños = 2005
-
-#imprimiendo los números enteros.
-print("Hola, Buenas tardes, soy ", name, "tengo ", edad, "años y nací el año ", cumpleaños)
-
-"""Definiendo numeros en coma flotante """
-estatura = 1.71 
+estatura = 1,71
 peso = 58.4
-
-#imprimiendo los números en coma flotante
-print("Hola, Buenas tardes, soy ", name, "tengo: ", edad, "años y nací el año ", cumpleaños , "mi estatura es de: ", estatura, "y mi peso de: ", peso );
-
-
-
-
-
-
 n_comp = 5 + 4j
 n_comp2 = complex(5,4)
 
+#6. imprimiendo numeros
+
 #Formateando la salida de números
 pi = 3,14159
-print("pi: ", round(pi,2))
 
+# 7. Variables en una sola linea (No es tan recomendado para depurar)
+pais, region, ciudad, codigo_postal = "Chile", "Los Lagos", "Castro", 5780000
+print(pais, region, ciudad, codigo_postal )
 
+# 8. imput
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-print ("----------------------------------------------------------------------------------------------")
-""" Ejercicio de Promedio de 3 numeros """
-
-res = (1+2+3) /3
-print ("Le daremos el promedio de 3 numeros")
-print ("El promedio es", res)
+year = input("en que año naciste?")
+print("el año de nacimiento es: " + year)
