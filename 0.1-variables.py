@@ -30,9 +30,8 @@ print("4. mi edad es de: " + str(edad) + " años Y mi estatura es de: " + str(es
 pi = 3.14159
 print("El valor de pi es: ", round(pi,2))
 
-#Formateando la salida de números (con "{:.xf}" ) #Preguntar a profe en persona.
+#Formateando la salida de números (con "{:.xf}" ) #Preguntar a profe en persona. (Dijo algo sobre un "trunc")
 print("el Valor de pi es: {:.4f} ".format(pi))
-
 # 7. Variables en una sola linea (No es tan recomendado para depurar)
 pais, region, ciudad, codigo_postal = "Chile, ", "Los Lagos, ", "Queilén ", 5780000
 print("5. La informacion de Benjamin: ", pais, region, ciudad, codigo_postal )
