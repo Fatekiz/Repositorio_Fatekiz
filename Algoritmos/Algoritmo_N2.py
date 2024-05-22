@@ -8,4 +8,8 @@ lapiz = "Solo hay 2 colores de lápices, rojo y azul"
 print(len(lapiz))
 
 
-print(len(lapiz) <= 50)
+f = (len(lapiz) <= 50)
+print(f)
+print(type(f))
+
+print(lapiz[ :10])
