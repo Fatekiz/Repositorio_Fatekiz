@@ -39,13 +39,11 @@ print("A continuación las notas mínimas de cada estudiante: \n")
 
 print (f"La nota mínima de Joel es: {min(notaj1,notaj2,notaj3)}")
 print (f"La nota mínima de Alondra es: {min(notaa1,notaa2,notaa3)}")
-print (f"La nota mínima de Paz es: {min(notap1,notap2,notap3)}")
+print (f"La nota mínima de Paz es: {min(notap1,notap2,notap3)} \n")
 
 #promedio de todos
 
 pf = (pj + pa + pp) / 3
-print(f"El promedio de los 3 promedios anteriores es: \n")
-
-print(pf)
+print(f"El promedio de los 3 promedios anteriores es: {pf}")
 
 """ FINALIZADO """
