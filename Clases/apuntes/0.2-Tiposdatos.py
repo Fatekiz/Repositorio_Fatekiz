@@ -70,11 +70,36 @@ print(f"clas. {type(imc)}")
 print(" ------- LISTAS -------")
 
 # 4.- Listas | Las "listas" son como cajas donde podemos guardar cosas (variables) en ellas, y luego llamarlas o buscarlas cuando las necesitamos  
-ciudades = ["castro", "Queilen", "Ancud", "Quellón", "Chonchi"]  
+ciudades = ["Castro", "Queilen", "Ancud", "Quellón", "Chonchi" , "Queilen"]
 varios = ["Nicolas", 20, True] 
 print(f"clas. {type(ciudades)}") # Acá nos reconoce que la variable "ciudades" es de tipo "list"
 print(f"4 - {ciudades}")
 print(f"4.1 - {varios}")
 
 #4.1.- forma formal de crear lista "list()" | Nadie la usa xD
-list(["python", "Ruby"])
+lista2 = list(["python", "Ruby"])
+
+print(len(ciudades)) # Cantidad de elementos de una lista 
+print(ciudades.count("Queilen")) # Cuenta la cantidad de ocurrencias de un elemento 
+
+#Impresión de un elemento especifico de una lista
+print(ciudades[3])
+
+listnum = [ 1, 2, 3 , 4 ,5 , 6, 7, 8, 9, 10]
+listnum2 = list(range(10)) #Función de rango
+listnum3 = list(range(1, 11)) # misma función 
+
+
+print(listnum2)
+print(listnum3)
+
+print(" ------- TUPLAS -------")
+
+musica = tuple()
+generos = ("Rock", "POP", "Blues" )
+print(generos)
+print(type(generos))
+
+print(generos[2])
+
+print(generos.index("Rock")) # Consulta la posición de un elemento en específico
