@@ -8,7 +8,7 @@ print("ingrese las descripciones de los dos productos")
 print("Recuerde que la descripción debe tener minimo 40 caracteres \n")
 
 #pidiendo datos por consola
-art1 = str(input("Ingrese la descripción del artículo >Silla< (Mínimo 40 carácter) \n"))
+art1 = str(input("Ingrese la descripción del artículo Silla (Mínimo 40 carácter) \n"))
  
 while len(art1) < 40:
     print("(Recuerde que debe ser mínimo 40 carácteres)")
@@ -37,7 +37,7 @@ print("\n")
 art11 = art1.upper() 
 art22 = art2.upper()
 
-print(f"{art1} {art2}")
+print(f"{art11} {art22}")
 
 sumaY = (cantidadY * valorY)
 sumaM = (cantidadM * valorM)
