@@ -86,20 +86,20 @@ print(ciudades.count("Queilen")) # Cuenta la cantidad de ocurrencias de un eleme
 print(ciudades[3])
 
 listnum = [ 1, 2, 3 , 4 ,5 , 6, 7, 8, 9, 10]
-listnum2 = list(range(10)) #Función de rango
-listnum3 = list(range(1, 11)) # misma función 
+listnum2 = list(range(10)) #Función de rango | crea una lista con el range() y al colocar cierto valor se crea desde el 0 hasta el valor dado 
+listnum3 = list(range(1, 11)) # misma función, solo que usando una "," por separador creamos asi unos limites para que se cree esa lista 
 
 
 print(listnum2)
 print(listnum3)
 
-print(" ------- TUPLAS -------")
+print(" ------- TUPLAS -------") # iguales que las listas pero con la diferencia en que son inalterables sus datos dentro de ellas.
 
 musica = tuple()
 generos = ("Rock", "POP", "Blues" )
 print(generos)
 print(type(generos))
 
-print(generos[2])
+print(generos[2]) 
 
-print(generos.index("Rock")) # Consulta la posición de un elemento en específico
+print(generos.index("Rock")) # Consulta la posición de un elemento en específico.
