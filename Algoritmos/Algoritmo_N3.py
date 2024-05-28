@@ -3,7 +3,7 @@
 #bienvenida
 print("\n") #Enter
 
-print("--¡Bienvenido!--")
+print("--¡Bienvenido!-- \n")
 print("ingrese las descripciones de los dos productos")
 print("Recuerde que la descripción debe tener minimo 40 caracteres \n")
 
