@@ -11,8 +11,8 @@ peso = 58 # numero int
 
 # potencia (con 2 *) ej: 2**2 --> 2 elevado a 2
 imc = peso / (estatura **2)
-print(imc) #Imprimiendo el imc con la operación del elevado 
-print(math.trunc(imc)) # Primero llamar libreria (l3) y luego llamar funcion math.trunc(x)
+print(f"1 - {imc}") #Imprimiendo el imc con la operación del elevado 
+print(f"1.1 - {math.trunc(imc)}") # Primero llamar libreria (l3) y luego llamar funcion math.trunc(x)
 
 print(" ------- 2.- STRINGS -------\n")
 
