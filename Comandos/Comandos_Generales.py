@@ -108,3 +108,14 @@ nombrem = nombre.lower() # Convirtió la cadena entera a minuscula
 print(nombrem)
 
 print(nombre_completo.split()) # Separo la cadena de la variable por " , "
+
+
+# BUCLES
+
+while x == x: 
+
+    break
+
+if x == x:
+    x = 10
+
