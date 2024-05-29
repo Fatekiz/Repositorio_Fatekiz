@@ -5,6 +5,7 @@
 x = "variable"
 y = 123.456
 nombre = "benjamin"
+nombre_completo = "Benjamin Concha"
 
 
 # 2. TRANSFORMAR A UN TIPO DE DATO
@@ -53,9 +54,9 @@ Rango_numerico = list(range(0,11)) # <-- asi tendra 10 numeros dentro (cuenta de
 len # imprime la cantidad de elementos o carácteres
 min # imprime el valor minimo
 max # imprime el valor máximo
+x.split # <-- Me separa las cadenas de una variable
 x.upper # me convierte una cadena de texto a todo en MAYUSCULAS pero debo guardarlo en una nueva variable
 x.lower # me convierte una cadena de texto a todo en minusculas pero debo guardarlo en una nueva variable
-
 x.index # imprime la posición del elemento a consultar
 x.count # cuenta la cantidad de ocurrencias de un elemento dentro de una lista
 "" .join # <-- Me permite agregar lo que yo agregue dentro del " " entre cada elemento de la lista
@@ -105,3 +106,5 @@ print(nombreM)
 
 nombrem = nombre.lower() # Convirtió la cadena entera a minuscula
 print(nombrem)
+
+print(nombre_completo.split()) # Separo la cadena de la variable por " , "
