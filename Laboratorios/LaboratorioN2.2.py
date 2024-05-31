@@ -62,7 +62,6 @@ print(f"El resumen transformado a mayusculas sería: {articulo.upper()} \n")
 print(f"Los ultimos 10 carácteres de la descripción es:{articulo[-10 :]}")
 
 # unir las palabras del resumen con un guión (-) como separador. 
-articulo.split
-newarticulo ="-" .join(articulo)
+newarticulo = articulo.split()
 
-print(newarticulo)
+print("-" .join(newarticulo))
