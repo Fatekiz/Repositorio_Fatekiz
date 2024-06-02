@@ -119,3 +119,11 @@ while x == x:
 if x == x:
     x = 10
 
+
+
+#                            FUNCIONES SETS
+
+# add() <- añade elementos al set seleccionado
+# clear() <- 
+# discard () <-
+# copy() <- crea una copia del set 
