@@ -2,10 +2,10 @@
 
 import math
 
-print("####### TIPOS DE DATOS ######## \n") # "\n" --> un "Enter" o un espacio en blanco de separacion de parrafo cuando se imprima
+print(                                            "####### TIPOS DE DATOS ######## \n") # "\n" --> un "Enter" o un espacio en blanco de separacion de parrafo cuando se imprima
 
 #1.- Números
-print("------- 1.- Números ------- \n")
+print("                                  ------- 1.- Números ------- \n               ")
 estatura = 1.71 # numero float
 peso = 58 # numero int
 
@@ -14,7 +14,7 @@ imc = peso / (estatura **2)
 print(f"1 - {imc}") #Imprimiendo el imc con la operación del elevado 
 print(f"1.1 - {math.trunc(imc)}") # Primero llamar libreria (l3) y luego llamar funcion math.trunc(x)
 
-print(" ------- 2.- STRINGS -------\n")
+print("                                          ------- 2.- STRINGS         -------\n")
 
 # 2. STRINGS
 institucion = "Universidad de Los Lagos" # toda variable "string" que yo asigne debe estar dentro de comillas (" x ") luego del"="
@@ -41,7 +41,7 @@ print("2.5 -",institucion.split()) # la funcion (x.split) hace que separe cada p
 
 print("2.6 -", len(asignatura)) # la funcion ( len(x) ) imprime la cantidad de letras (incluyendo espacios) que contiene la variable "x"
 
-print("------- 3.- BOOLEANOS -------")
+print("                                              ------- 3.- BOOLEANOS -------                        ")
 
 #. 3 BOOLEANOS
 
@@ -58,7 +58,7 @@ print(f"3.3 -{19 == 19}") # COMENTARIO: "=" --> asignación | "==" --> es de com
 print(f"3.4 -{bool(0)}") # en booleanos existe el true/false 1/0 | este es 0 == false
 print(f"3.5 -{bool(1)}") # 1 == True.
 
-print(f" ------- impresión de clasificación de variables -------")
+print(f"                              ------- impresión de clasificación de variables -------             ")
 
 # impresión de clasificación de variables.
 print(f"clas. {type(ampolleta)}") # la función type(x) hace que nos diga a que clase pertenece la variable ej. int, float, bool, str etc...
@@ -67,7 +67,7 @@ print(f"clas. {type(peso)}")# COMENTARIO -- la funcion "f -string" la f debe est
 print(f"clas. {type(imc)}")
 
 
-print(" ------- LISTAS -------")
+print("                                                   ------- LISTAS -------                  ")
 
 # 4.- Listas | Las "listas" son como cajas donde podemos guardar cosas (variables) en ellas, y luego llamarlas o buscarlas cuando las necesitamos  
 ciudades = ["Castro", "Queilen", "Ancud", "Quellón", "Chonchi" , "Queilen"]
@@ -80,11 +80,16 @@ print(f"4.1 - {varios}")
 lista2 = list(["python", "Ruby"])
 
 print(len(ciudades)) # Cantidad de elementos de una lista 
-print(ciudades.count("Queilen")) # Cuenta la cantidad de ocurrencias de un elemento 
+print(ciudades.count("Queilen")) # Cuenta la cantidad de ocurrencias de un elemento | en este caso "2"
 
 #Impresión de un elemento especifico de una lista
 print(ciudades[3])
 
+# Resignando valores de listas 
+ciudades[0] = "Quemchi"
+print(ciudades) # la posición 0 ya no es castro, es Quemchi
+
+# Funciones de rango con listas
 listnum = [ 1, 2, 3 , 4 ,5 , 6, 7, 8, 9, 10]
 listnum2 = list(range(10)) #Función de rango | crea una lista con el range() y al colocar cierto valor se crea desde el 0 hasta el valor dado 
 listnum3 = list(range(1, 11)) # misma función, solo que usando una "," por separador creamos asi unos limites para que se cree esa lista 
@@ -93,13 +98,90 @@ listnum3 = list(range(1, 11)) # misma función, solo que usando una "," por sepa
 print(listnum2)
 print(listnum3)
 
-print(" ------- TUPLAS -------") # iguales que las listas pero con la diferencia en que son inalterables sus datos dentro de ellas.
+print("                                      ------- TUPLAS -------              ") # iguales que las listas pero con la diferencia en que son inalterables sus datos dentro de ellas.
 
 musica = tuple()
 generos = ("Rock", "POP", "Blues" )
+
 print(generos)
 print(type(generos))
 
 print(generos[2]) 
 
-print(generos.index("Rock")) # Consulta la posición de un elemento en específico.
+print(generos.index("Rock")) # Consulta la posición de un elemento en específico. 
+
+
+# Cambio de estructura de tupla a lista. (en este caso es posible cambiar de una tupla a una lista solo usando el list(). ).
+
+tuplita = ("Victor", 200, "Universidad", True)
+print(tuplita)
+print(f"La tupla  es de tipo {type(tuplita)}")
+
+tuplita = list(tuplita)
+print(f"La tupla ahora es de tipo {type(tuplita)}")
+
+
+print(tuplita[0:3])
+
+
+print("                     ------        SETS (CONJUNTOS)   ----------      ")
+
+"""     CARACTERISTICAS:
+
+Desordenado: A diferencia de las listas o las tuplas los sets son desordenados, eso significa que no llevan un orden
+por lo cual, no es posible consultar su posicion o ocupar un .index() 
+
+
+
+
+"""
+
+# G. SETS (Conjuntos)
+conjunto_vacio = set() # Inicializando un set de la forma convencional. (no tan usada)
+conjunto_vacio1 ={"JavaScript"} # ??????? (las llaves sirven para Set y dict) (si no hubiera añadido un elemento, lo tomaría como dict)
+print(type(conjunto_vacio))
+print(type(conjunto_vacio1))
+
+
+#Iniciaizando sets
+colores = {"Azul", "Rojo", "Amarillo", "Verde", "Violeta",}
+animales = set({"Gato", "Perro", "Caballo", "Hamster"}) # <-- forma no tan usada... es más rapido solo usar "{}"
+print(colores)
+print(animales)
+
+# Agregando nuevos elementos al set
+
+colores.add("Negro") #Con la funcion .add() añadi el nuevo elemento "cafe" | al ser los sets desordenados, no se añade al final de la lista.
+print(colores)
+
+print("                               --------- DICCIONARIOS ---------------                ")
+
+""" Estructura de datos que permite almacenar sus elementos en pares clave-valor.
+    A diferencia de las listas o tuplas que almacenan datos de forma secuencial,
+    los diccionarios utilizan el formato clave-valor para acceder a cada elemento y para ocupar funciones usamos las "Claves" 
+
+
+                 ""Caracteristicas""
+
+    Lista desordenada: no tienen orden en específico.
+
+    Claves unicas: no pueden ser modificadas una vez ya añadidas, y los valores pueden ser cualquier objeto
+
+    Acceso por claves: todos los accesos se hacen por claves en lugar del indice.
+"""
+
+paciente = {
+    "Nombre" : "alfredo",
+        "Edad":29,                           # <-- Forma más usada (Se puede escribir lineal)
+        "Ciudad": "Osorno"
+
+}
+
+hospital = dict(
+nombre = "Hospital de queilen",
+direccion = "Calle jose manuel balmaceda 01",
+ciudad = "Queilen"
+)
+
+print(paciente)
+print(hospital)
