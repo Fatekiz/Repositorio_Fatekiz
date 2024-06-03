@@ -171,17 +171,42 @@ print("                               --------- DICCIONARIOS ---------------    
 """
 
 paciente = {
-    "Nombre" : "alfredo",
-        "Edad":29,                           # <-- Forma más usada (Se puede escribir lineal)
-        "Ciudad": "Osorno"
+    "nombre" : "alfredo",
+        "edad":29,                           # <-- Forma más usada (Se puede escribir lineal)
+        "ciudad": "Osorno"
 
 }
 
-hospital = dict(
-nombre = "Hospital de queilen",
-direccion = "Calle jose manuel balmaceda 01",
+doctor = dict(
+nombre = "Benjamin",
+edad = 40,
 ciudad = "Queilen"
 )
 
 print(paciente)
-print(hospital)
+print(doctor)
+
+# Eliminando la clave "Nombre" del dicciobario doctor
+
+
+doctor.pop("nombre") # <-- Sirve para eliminar el elemento del dioccionario
+print(doctor)
+
+print(paciente.keys()) # <-- Me retorna las keys(claves) del diccionario paciente
+print(paciente.values()) # <-- Me retorna los values(valores) del diccionario paciente
+
+# Consultar Valores Específicos
+print(paciente["nombre"])
+
+#Actualizando
+paciente.update({
+    "ciudad": "Queilen",
+    "edad": "41"
+
+})
+
+print(paciente)
+
+#          ---- Clear ----
+paciente.clear()
+print(paciente)
