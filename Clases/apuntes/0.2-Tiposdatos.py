@@ -69,7 +69,13 @@ print(f"clas. {type(imc)}")
 
 print("                                                   ------- LISTAS -------                  ")
 
-# 4.- Listas | Las "listas" son como cajas donde podemos guardar cosas (variables) en ellas, y luego llamarlas o buscarlas cuando las necesitamos  
+# 4.- Listas | Las "listas" son como cajas donde podemos guardar cosas (variables) en ellas
+#  y luego llamarlas o buscarlas cuando las necesitamos 
+#         características:
+# son ordenadas: los elementos dentro de ellas estan indexados
+# Editable: Los elementos son "mutables" y se pueden; editar, agregar, eliminar etc...
+# No única: la lista puede contener elemnto duplicados sin que este arroje un error.
+
 ciudades = ["Castro", "Queilen", "Ancud", "Quellón", "Chonchi" , "Queilen"]
 varios = ["Nicolas", 20, True] 
 print(f"clas. {type(ciudades)}") # Acá nos reconoce que la variable "ciudades" es de tipo "list"
@@ -98,7 +104,15 @@ listnum3 = list(range(1, 11)) # misma función, solo que usando una "," por sepa
 print(listnum2)
 print(listnum3)
 
-print("                                      ------- TUPLAS -------              ") # iguales que las listas pero con la diferencia en que son inalterables sus datos dentro de ellas.
+print("                                      ------- TUPLAS -------              ")
+
+# iguales que las listas pero con la diferencia en que son inalterables sus datos dentro de ellas.
+#         Características:
+# Ordenada: Al igual que la listas los elementos dentro de ellas estan ordenadas y se puede acceder a ellas consultando una posición
+# Inmutables: Significa que una vez creada la tupla ya no se puede editar ni agregar elementos
+# Dinámica: Puede tener diferentes tipos de datos; como strings, otras tuplas, listas, diccionarios, etc...
+# Eficientes: Son más eficientes que las listas cuando se trata de operaciones que no implican modificaciones
+
 
 musica = tuple()
 generos = ("Rock", "POP", "Blues" )
@@ -132,8 +146,6 @@ Desordenado: A diferencia de las listas o las tuplas los sets son desordenados, 
 por lo cual, no es posible consultar su posicion o ocupar un .index() 
 
 
-
-
 """
 
 # G. SETS (Conjuntos)
@@ -144,7 +156,7 @@ print(type(conjunto_vacio1))
 
 
 #Iniciaizando sets
-colores = {"Azul", "Rojo", "Amarillo", "Verde", "Violeta",}
+colores = {"Azul", "Rojo", "Amarillo", "Verde", "Violeta"}
 animales = set({"Gato", "Perro", "Caballo", "Hamster"}) # <-- forma no tan usada... es más rapido solo usar "{}"
 print(colores)
 print(animales)
@@ -168,6 +180,8 @@ print("                               --------- DICCIONARIOS ---------------    
     Claves unicas: no pueden ser modificadas una vez ya añadidas, y los valores pueden ser cualquier objeto
 
     Acceso por claves: todos los accesos se hacen por claves en lugar del indice.
+    
+    Mutables: los valores dentro del diccionario se pueden modificar, agregar, eliminar etc...
 """
 
 paciente = {
@@ -210,3 +224,27 @@ print(paciente)
 #          ---- Clear ----
 paciente.clear()
 print(paciente)
+
+"""                        --- funciones añadida ---       """
+
+#                                    map
+# map() <-- mapea la lista, osea; recorre elemento por elemento
+
+n = [1,2,3,4,5]
+n_str = list(map(str,n)) # <-- recorrio por cada elemento y los tránsformo a (str) 
+print("Lista de números como strings:", ", ".join(n_str))
+#                                    Filtros
+# filter() <-- hace un filtro
+
+ramos = ["programación", "Taller", "Matemáticas", "Física", "Inglés"]
+long = list(filter(lambda x: len(x) > 7, ramos))
+print(long)
+
+#                  zip
+#zip() <-- junta las variables de los iterables en una tupla EN PARES ORDENADOS.
+
+a = [1,2,3,4]
+b = ["A", "B","C","D" ]
+
+conprimir = list(zip(a,b))
+print(conprimir)
