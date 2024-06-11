@@ -158,11 +158,11 @@ if x == x:
 
 #                   DICCIONARIOS
 
-# keys()
-# values()
-# items()
-# clear()
-# copy()
+# keys() <--- devuelve lista con todas las claves del diccionario
+# values() <--- devuelve una lista con todos los valores del diccionario
+# items() <--- devuelve una lista de tuplas donde cada tupla contiene una clave junto con su valor
+# clear() <--- limpia la lista
+# copy() <--- hace una copia del diccionario
 # pop() <-- elimina la clave y valor (llamando la clave)
 
 #             ---- Listas ----
