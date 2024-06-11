@@ -145,6 +145,10 @@ print("                     ------        SETS (CONJUNTOS)   ----------      ")
 Desordenado: A diferencia de las listas o las tuplas los sets son desordenados, eso significa que no llevan un orden
 por lo cual, no es posible consultar su posicion o ocupar un .index() 
 
+NO TIENE ELEMENTOS REPETIDOS
+
+Solo pueden contener elementos u objetos INMUTABLES
+
 
 """
 
