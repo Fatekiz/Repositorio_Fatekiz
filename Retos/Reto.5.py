@@ -4,27 +4,15 @@ n = int(input("Ingrese el numero tope hasta donde llegue la serie de fibonacci "
 a = 0
 b = 1
 
-lista = []
+lista = [a,b]
 
-while a < n:
-    print(a)
-    a = a + b
-    f = (a) + (a-1)
-    lista.append(f)
-    print(lista)
+while True:
+    c = a + b
+    if c > n:
+        break
+    lista.append(c) 
+    a = b
+    b = c
+    # a, b = b, c <-- permutacion, resumo lo de arriba en una sola linea.
 
-
-"""
-Plasmar para entender: 
-
-    0 , 1 , 1 , 2 , 3 ,5 , 8 , 13 , 21 , 35 
-
-    a + b
-
-    a = 0
-    b = 1
-
-
-
-
-"""
+print(" ".join(map(str,lista)))
