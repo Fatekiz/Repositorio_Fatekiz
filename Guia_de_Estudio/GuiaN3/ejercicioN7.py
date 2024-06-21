@@ -20,3 +20,5 @@ else: # de lo contrario:
     for i in numeros:
         resultado_f *= i
     print(f"                es: {resultado_f} ")
+
+# Terminado

@@ -87,3 +87,5 @@ sueldos_de_empleados = {
 print(sueldos_de_empleados["pago_ds_1"]) # info de sueldo de juan
 print(sueldos_de_empleados["pago_ds_2"]) # info de sueldo de diego
 print(sueldos_de_empleados["pago_ds_3"]) # info de sueldo de benjamin
+
+# Terminado

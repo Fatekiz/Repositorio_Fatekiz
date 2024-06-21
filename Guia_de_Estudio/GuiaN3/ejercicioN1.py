@@ -14,4 +14,6 @@ print(enunciado_split)
 
 tupla = ("la palabra se repite: ", enunciado_split.count("universidad"), "vez")
 print(tupla)
-print(type(tupla)) #me aseguro que esta en una tupla
+print(type(tupla)) #me aseguro que esta en una tupla#
+
+#terminado
