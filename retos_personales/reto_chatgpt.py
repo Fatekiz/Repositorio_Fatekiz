@@ -7,8 +7,8 @@ def mostrar_menu():
     print("1.- agregar calificacion al estudiante")
     print("2.- Mostrar todas las calificaciones")
     print("3.- Salir")
-    opcion = input("ingrese una opción ")
-    return opcion
+    x = input("ingrese una opción ")
+    return x
 
 # funcion para agregar la calificacion a un estudiante
 def agregar_calificacion(calificaciones):
