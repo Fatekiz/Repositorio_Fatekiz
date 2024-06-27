@@ -5,7 +5,7 @@ El programa termina cuando se acierta el número."""
 
 # numero secreto.
 
-num_secreto = int(input("Bienvenido usuario ingrese un número secreto para que acontinuación lo adivine. \n"))
+num_secreto = int(input("Bienvenido usuario ingrese un número secreto para que acontinuación lo adivine: "))
 
 #iniciando programa 
 
