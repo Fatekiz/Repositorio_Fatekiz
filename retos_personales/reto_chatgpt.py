@@ -22,7 +22,7 @@ def mostrar_calificaciones(calificaciones):
     if not calificaciones:
         print("No hay calificaciones agregadas")
     else:
-        print("calificaciones:")
+        print("calificaciones:") 
         for nombre,calificacion in calificaciones.items():
             print(f"{nombre}: {calificacion}")
         print("")
@@ -43,7 +43,6 @@ def main():
         else:
             print("Opcion no válida. Porfavor intente denuevo. \n ")
 
-if __name__ == "__main__":
-    main()
+main()
 
 # Brigido... apenas lo entiendo

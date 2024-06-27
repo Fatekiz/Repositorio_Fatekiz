@@ -14,3 +14,15 @@ print(f"0123456789876543210")
 
 # forma 2 "for"
 
+niveles = 10
+
+for i in range(1, niveles +1):
+    numeros= []
+    for j in range(i):
+        numeros.append(str((i + j) % 10))
+    for j in range(i -2, -1, -1):
+        numeros.append(str((i + j) % 10))
+    linea = " ".join(numeros)
+    print(linea.center(niveles * 4 - 3))
+
+    # BRIGIDO...
